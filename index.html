@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Galdeano&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="css/scroll.css" />
+  <link rel="stylesheet" type="text/css" href="css/stars.css" />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="css/rotatepic.css">
+  <title>Horizontal Scrolling</title>
+</head>
+<body>
+
+
+      <!-- <img src="nightsky_home_1920x1080.png" alt="Image"> -->
+     <nav class="vertical-navigation">
+        <ul class="vertical-menu">
+            <li class="link in"><span class="dot in"></span> <a>Intro</a></li>
+            <li class="link"><span class="dot"></span> <a>History</a></li>
+            <li class="link"><span class="dot"></span> <a>Admission</a></li>
+            <li class="link"><span class="dot"></span> <a>Vendors </a></li>
+            <li class="link"><span class="dot"></span> <a>Contact</a></li>
+            <li class="link last"><span class="dot"></span> <a>Footer</a></li>
+            <li class="link track top"></li>
+        </ul>
+    </nav>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+    <!--tent bg-->
+    <div class="tents-bg">
+      <img src="img/tents-bg_1919x270.png" alt="nightmarket tents" height="270" width="1919">
+    </div>
+
+    <main class="wrapper">
+    <section class="panel gradient frontpage" id="Intro">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
+            <img src="img/Moon1.png" id="moon"  width="1130" height="650">
+           <!-- <img src="img/droppingstar.png" id="dropping"  width="1001" height="742">-->
+          </g>
+         </g>
+        </svg>
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+        <h1>Richmond Night Market</h1>
+        <h4>April 28th - October 9th</h4>
+      </section>
+    <section class="panel gradient spacerone"></section>
+
+    <section class="panel gradient historypg" id="History">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <h2>The Beginning</h2>
+        <div class="grid-container">
+          <div class="grid-item grid-item-1"><p>Founded 23 years ago by entrepreneur Raymond Cheung, the first Richmond Night Market was held in 2000 at Continental Centre on Cambie Road, and it has grown from those modest beginnings to become a regional mainstay and must-see for visitors and locals.</p>
+
+          <p>Featured in The New York Times, the Richmond Night Market is the largest night market in North America and is an international attraction, drawing more than one million people every year.</p></div>
+          <div class="grid-item grid-item-2"><img src="img/night-market-entrance_history_900x506.jpg" alt="night market entrance" width="900" height="506" class="nm_image"></div>
+        </div>
+    </section>
+    <section class="panel gradient spacertwo"></section>
+   
+    <section class="panel gradient twenty3pg" id="twetny">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <h2>This Year</h2>
+      <div class="grid-container">
+          <div class="grid-item grid-item-1"><p>Richmond Night Market continues to be a must visit Summer attraction in the Lower Mainland, offering an amazing variety of street food, merchandise and games. Open every weekend from May to October, you certainly don’t want to miss it!</p></div>
+    </section>
+    <section class="panel gradient spacerthree"></section>
+
+    <!-- Admissions Panel -->
+    <section class="panel gradient admissionpg" id="Admission">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <h2 id="a-title">Admission</h2>
+      <div class="grid-admission-container">
+        <div class="ticket zoom">
+          <h3>Zoom Pass</h3>
+          <p>$35</p>
+        </div>
+        <div class="ticket general">
+          <h3>General Admission</h3>
+          <p>$8</p>
+        </div>
+        <div class="ticket childSen">
+          <h3>Children(>7) and Senior(60+)</h3>
+          <p>FREE<</p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Admissions Panel -->
+    <section class="panel gradient spacerfour"></section>
+
+    <!-- Contacts Panel -->
+    <section class="panel gradient contactpg" id="Contact">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <h2 id="c-title">Contact & Event Information</h2>
+        <div class="grid-contact-container">
+            <div class="contact c-info-location">
+              <h3>Contact</h3>
+              <p>604-244-8448
+              admin@richmondnightmarket.com</p>
+              <h3>Location</h3>
+              <p>8351 River Rd, Richmond BC V6X 1Y4</p>
+            </div>
+            <div class="contact c-map">
+              <img src="img/nightmarket-map_contact_1840x1194.png" alt="night market map" >
+            </div>
+            <div class="contact c-faq">
+              <h3>FAQ</h3>
+              <h5 class="faq-question" onclick="toggleAnswer()">Are pets allowed?</h5>  
+              <p class="faq-answer" style="display:none;">Yes, Pets must always remain on a leash, and in full control of the owner. Pet owners are also asked to be kind, respectful and considerate of others attending the Richmond Night Market. Pet owners must also clean up after their pets when they make a mess. Larger dogs must be BOTH leashed AND muzzled, for the safety of visitors, vendors and staff at the Richmond Night Market.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contacts Panel -->
+    <section class="panel gradient spacerfive"></section>
+
+<!-- >>>>>>> 5e3ca25db6dbddf62573eb63bf78ddd377214c39
+>>>>>>> Stashed changes -->
+      
+    <section class="panel gradient footerpg" id="FooterPage">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+    
+        <h2>The Night is Young</h2>
+        <p>Founded 23 years ago by entrepreneur Raymond Cheung, the first Richmond Night Market was held in 2000 at Continental Centre on Cambie Road, and it has grown from those modest beginnings to become a regional mainstay and must-see for visitors and locals.Featured in The New York Times, the Richmond Night Market is the largest night market in North America and is an international attraction, drawing more than one million people every year.</p></section>
+    
+    <section class="panel gradient spacersix"></section>
+
+    <section class="panel gradient vendorpg" id="Vendors">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div>
+      <h2>Vendors</h2>
+      <h3>A Feast for the Eyes, and Stomach!</h3>
+      <a href="https://www.instagram.com/richmondnightmarket/?hl=en">Check Our Instagram!</a>
+      <p>Adorned for the first time with custom-made neon signs, more than 110 food booths and food trucks offer more than 600 menu items. It’s the largest selection of international foods in a single location at Summer Wonderland.
+      New this year, visitors can try churros and butter beer, as well as sampling food from Indonesia and Turkey. People are sure to find options they have never tried before for an amazing culinary experience.
+      Bring your friends and family and marvel at all the unique and delicious possibilities!</p></div>
+      <div></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-11 col-md-10 col-centered">
+
+      <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-col">
+              <div class="block red img-responsive"><img src="img/sushi-taco_vendors.jpg"  width="230" height="306"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-col">
+              <div class="block green img-responsive"><img src="img/taiyaki-icecream_vendors.jpg"  width="230" height="306"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-col">
+              <div class="block blue img-responsive"><img src="img/unique-drink_vendors.jpg" width="230" height="306"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-col">
+              <div class="block yellow img-responsive"><img src="img/crepe-creme-brulee_vendors.jpg" width="230" height="306"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-col">
+              <div class="block img-responsive"><img src="img/xinjiang-lamb-bun_vendors.png" width="230" height="306"></div>
+            </div>
+          </div>          
+        </div>
+
+        <!-- Controls -->
+        <div class="left carousel-control">
+          <a href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </div>
+        <div class="right carousel-control">
+          <a href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    </section>
+
+  </main>
+<!--    <div class="scrollElement"></div>-->
+
+  <script>
+    function toggleAnswer() {
+    var answer = document.querySelector('.faq-answer');
+      if (answer.style.display === "none") {
+          answer.style.display = "block";
+      } else {
+          answer.style.display = "none";
+      }
+    } 
+  </script>
+  
+  <!--moon animation-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js'></script><script  src="./moon.js"></script>
+<<<<<<< Updated upstream
+  <!--gradient-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./gradient.js"></script>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./gradient.js"></script>
+  <!-- rotating slides -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+  <script  src="./rotatespic.js"></script>
+<!--   
+======= -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./gradient.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./gradient.js"></script>
+
+
+
+<!-- >>>>>>> Stashed changes -->
+
+</body>
+</html>
